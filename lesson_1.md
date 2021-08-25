@@ -12,7 +12,7 @@ I am showing a monitor, speakers, the keyboard, the tower, a fan, the hard disk 
 # Homework Aug 25
 
 ## ① Start watching the videos posted on the resource stream for Unit 1.  (Link #8 in the Learning Log)
--
+/
 
 ## ② Research. What are variables in computer programming? What types of variables can we use in Python?
 Variables are where data that is used in a program are stored and retrieved. It's a value that can change, depending on conditions or on information passed to the program.
