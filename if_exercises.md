@@ -87,7 +87,15 @@ Given two cells of a chessboard. If they are painted in one color, print the wor
 The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell.
 
 ```.py
+c1 = int(input())
+r1 = int(input())
+c2 = int(input())
+r2 = int(input())
 
+if ((c1 + r1) % 2) == ((c2 + r2) % 2):
+    print("YES")
+else:
+    print("NO")
 ```
 
 ## 7. King move
@@ -96,7 +104,15 @@ The program receives the input of four numbers from 1 to 8, each specifying the 
 The program should output YES if a king can go from the first cell to the second in one move, or NO otherwise.
 
 ```.py
+c1 = int(input())
+r1 = int(input())
+c2 = int(input())
+r2 = int(input())
 
+if ((c1 + 1 == c2) or (c1 - 1 == c2) or (c1 == c2)) and ((r1 + 1 == r2) or (r1 - 1 == r2) or (r1 == r2)):
+    print("YES")
+else: 
+    print("NO")
 ```
 
 ## 8. Bishop moves
@@ -104,7 +120,15 @@ In chess, the bishop moves diagonally, any number of squares. Given two differen
 The program receives as input four numbers from 1 to 8, specifying the column and row numbers of the starting square and the column and row numbers of the ending square. The program should output YES if a Bishop can go from the first square to the second in one move, or NO otherwise.
 
 ```.py
+c1 = int(input())
+r1 = int(input())
+c2 = int(input())
+r2 = int(input())
 
+if ((c1 + r1) % 2) == ((c2 + r2) % 2) and ((c1 + r1 == c2 + r2) or (c1 - r1 == c2 - r2)):
+    print("YES")
+else:
+    print("NO")
 ```
 
 ## 9. Queen move
@@ -113,7 +137,15 @@ The program receives the input of four numbers from 1 to 8, each specifying the 
 The program should output YES if a queen can go from the first cell to the second in one move, or NO otherwise.
 
 ```.py
+c1 = int(input())
+r1 = int(input())
+c2 = int(input())
+r2 = int(input())
 
+if (c1 == c2 or r1 == r2) or (((c1 + r1) % 2) == ((c2 + r2) % 2)) and ((c1 + r1 == c2 + r2) or (c1 - r1 == c2 - r2)):
+    print("YES")
+else:
+    print("NO")
 ```
 
 ## 10. Knight move
@@ -122,7 +154,15 @@ The program receives the input of four numbers from 1 to 8, each specifying the 
 The program should output YES if a knight can go from the first cell to the second in one move, or NO otherwise.
 
 ```.py
+c1 = int(input())
+r1 = int(input())
+c2 = int(input())
+r2 = int(input())
 
+if (abs(c1 - c2) == 1 and abs(r1 - r2) == 2) or (abs(c1 - c2) == 2 and abs(r1 - r2) == 1):
+    print("YES")
+else:
+    print("NO")
 ```
 
 ## 11. Chocolate bar
@@ -150,5 +190,10 @@ The rules in Gregorian calendar are as follows:
 - a year is always a leap year if its number is exactly divisible by 400
 
 ```.py
+n = int(input())
 
+if (n % 4 == 0) and (n % 100 != 0) or (n % 400 == 0):
+    print("LEAP")
+else:
+    print("COMMON")
 ```
