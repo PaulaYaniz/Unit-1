@@ -16,7 +16,7 @@ Apart for this requirements, the owner is open to any type of game, topic or gen
 ## Proposed Solution
 
 Design statement:
-I will to design and make a classical text-based game for a client who is the owner of the local game shop. The text-based game will be about the Minotaur's labyrinth and is constructed using the software Python. It will take 3 weeks to make and will be evaluated according to the criteria that is below.
+I will design and make a classical text-based game for a client who is the owner of the local game shop. The text-based game will be about the Minotaur's labyrinth and is constructed using the software Python. It will take 3 weeks to make and will be evaluated according to the criteria that is below.
 
 Justify the tools/structure of your solution:
 Python is one of the most accessible programming languages because it is not complicatedit and has simplified syntax very similar to the English language, which is perfect for beginners. Also, its codes can be easily written and executed much faster than other programming languages. Python is an open source and has a lot of libraries to complement the code.
