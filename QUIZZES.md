@@ -22,7 +22,7 @@ else:
 
 # QUIZ 002
 ## Given three integer values, A, B, and C, output the largest difference between any of the numbers.
-Examples
+Examples:
 
 largestDistance(1, 2, 3) → 2
 
@@ -41,3 +41,23 @@ dist3 = abs(num3 - num1)
 m = max(dist1, dist2, dist3)
 print(m)
 ````
+
+# QUIZ 003
+## Given an integer N, show 100 integers with the repeating pattern 0 to N-1, 0 to N-1,... 
+Examples:
+
+rangePatternN(3)   → 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2,.... (100 numbers)   → 4950
+
+rangePatternN(5)  → 0, 1, 2, 3, 4, 0, 1, 2, 3, 4, 0, 1,.... (100 numbers)   → 4950
+```
+n = int(input())
+a = 0
+
+for i in range(0, 100):
+  r = i % n
+  print(r, end = ", ")
+  a += i
+
+print()
+print(a)
+```
