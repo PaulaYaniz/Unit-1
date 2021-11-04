@@ -61,3 +61,22 @@ for i in range(0, 100):
 print()
 print(a)
 ```
+
+# QUIZ 004
+## Write a function that receives an integer N, and returns all its factors. 
+Examples:
+
+perfectN(6)   → [1, 2, 3]
+
+perfectN(10)  → [1, 2, 5] 
+
+```
+def print_factors(x):
+   for i in range(1, x):
+       if x % i == 0:
+           print(i)
+
+num = int(input())
+
+print_factors(num)
+```
